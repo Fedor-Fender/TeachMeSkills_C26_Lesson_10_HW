@@ -24,8 +24,12 @@ public class Runner {
             for (int i = 0; i < client.getBaseCards().length-1; i++) {
                 if (client.getBaseCards()[i].equals(client.getBaseCards()[i+1])) {
                     count++;
-                }System.out.println("Person has count of card: "+count);// как вывести else и не получается вывести количество одинаковых карт,их число вывыдятся все подряд по циклу?
+                } else if (count == 0) {
+                    System.out.println("There aren't any kind of equal card");
+                    break;
+                }
             }
         }
+        System.out.println("Person has count of card: "+count);
     }
 }
