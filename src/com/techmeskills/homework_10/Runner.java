@@ -6,7 +6,7 @@ import com.techmeskills.homework_10.client.Client;
 public class Runner {
     public static void main(String[] args) {
 
-        // to create variable counter
+        // to create variable counter equals card
         int count = 0;
 
         BaseCard card1 = new BaseCard(123, "90190111", 1000.1);
